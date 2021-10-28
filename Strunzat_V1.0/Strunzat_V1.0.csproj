@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>Strunzat_V1._0</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="Utility_Prototype">
+      <HintPath>..\..\..\..\Desktop\Utility_Prototype.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
