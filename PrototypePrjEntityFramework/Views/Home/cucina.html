@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Cucina</title>
+        <script src = "cucina.js"></script>
+        <link rel="stylesheet" href="cucina.css">
+    </head>
+    <body>
+        <div>
+            <input type="text" placeholder="nome piatto.." id="nome">
+            <input type="number" placeholder="prezzo.." id="prezzo">
+            <select id="tipo">
+                <option value="primo">Primo</option>
+                <option value="secondo">Secondo</option>
+                <option value="dolce">Dolce</option>
+            </select>
+            <input placeholder="ingredienti separati dalla virgola." id="ingredienti">
+            <button id="btn1" onclick="aggiungi()">Aggiungi Piatto</button>
+        </div>
+        <div id="sinistra" class="colonna">
+            <input type="text" placeholder="Tipo Piatto.." id="tipoPiatto">
+            <input type="text" placeholder="Max prezzo.." id="max">
+            <input type="text" placeholder="Min prezzo.." id="min">
+            <input type="text" placeholder="inserisci ingrediente.." id="ing">
+            <button id="btnStampa" onclick="stampa()">Stampa Menu</button>
+            <button id="btnStampaPrezzoTot" onclick="stampaPrezzoTotale()">Stampa PrezzoTot</button>
+            <button id="btnStampaPrimi" onclick="stampaPrimi()">Stampa Primi</button>
+            <button id="btnStampaIngredienti" onclick="stampaIng()">Stampa Ingredienti</button>
+            <button id="btnStampaPerTipo" onclick="stampaPrezzoTotDiTipo(tipoPiatto.value)">Stampa prezzoTot</button>
+            <button id="btnStampaPerTipoCompreso" onclick="stampaPrezzoTotDiTipoCompreso(tipoPiatto.value, max.value, min.value)">Stampa piatti Compresio di tipo</button>
+            <button id="btnStampaPerIngrediente" onclick="stampaPiattiPerIng(ing.value)">Stampa PerIng</button>
+            <button id="btnStampaNonIngrediente" onclick="stampaPiattiNonIng(ing.value)">Stampa NonIng</button>
+        </div>
+        <div id="destra" class="colonna">
+            <textarea name="txtMenu" id="txtMenu">Menu:</textarea>
+        </div>
+    </body>
+</html>
